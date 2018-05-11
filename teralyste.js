@@ -8,7 +8,7 @@ const moment = require('moment');
 
 let servers = {};
 let rules = fs.readFileSync('./rules.md')// jai un dossier avec la chatre du serveur dans ./rules.md. je saios pas si il y'a une erreur ici 
-bot.login('NDQxMzM0MzYzMzM0OTAxNzcx.DczzaQ.l0sOOiRw_xWrg7ijlYSZjiad_B8');
+bot.login('process.env.TOKEN');
 // let stop = false; // for use with while and setTimeout
 
 console.log(moment.locale()); // en
@@ -132,7 +132,7 @@ function update(discord_message, channel) {
                         }
                         if(moment(expire_in) <= 599999 && (moment(expire_in) >= 1)){
                         message.img = "https://cdn.discordapp.com/attachments/437388704072466433/437388991638142987/Warframe1min_restant_du_jour_coucher_du_soleil0000.jpg" 
-                }//ça marche mais c'est pas tres opti... ques tu en pense ? (ça envois des images differantes selon le moment expire in )
+                }
                 }
                 writeMessage(message, discord_message);
         });
