@@ -7,13 +7,12 @@ const EventEmitter = require('events');
 const moment = require('moment');
 
 let servers = {};
-let rules = fs.readFileSync('./rules.md')// jai un dossier avec la chatre du serveur dans ./rules.md. je saios pas si il y'a une erreur ici 
+let rules = fs.readFileSync('./rules.md')
 bot.login('process.env.TOKEN');
 // let stop = false; // for use with while and setTimeout
 
 console.log(moment.locale()); // en
-moment.locale('fr');// je voulais le moment en version fr , heur française ... ça a marcher mais je ne pense pas que c'est a cause de ça . on peux le viré ?
-// tout la gestion guildMember ne fonction pas , jai merdé dans mon code :/ jaurais aimer en parler en vocal pour comprendre :(
+moment.locale('fr');
         bot.on('message', function(message) {
                 if(message.content.startsWith("oc")) {
                             message.delete(message.author);
