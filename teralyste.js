@@ -8,7 +8,8 @@ const EventEmitter = require('events');
 const moment = require('moment');
 // mon test
 let servers = {};
-let rules = fs.readFileSync('./rules.md')
+let rules = fs.readFileSync('./rules.md');
+console.log(process.env);
 bot.login(process.env.TOKEN);
 // let stop = false; // for use with while and setTimeout
 
