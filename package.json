@@ -10,8 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 2",
-    "start": "echo \"Starting\" && node teralyst.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node teralyst.js"
   },
   "author": "",
   "license": "ISC"
