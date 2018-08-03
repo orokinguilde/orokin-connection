@@ -9,7 +9,7 @@ const moment = require('moment');
 // mon test
 let servers = {};
 let rules = fs.readFileSync('./rules.md')
-bot.login('process.env.TOKEN');
+bot.login(process.env.TOKEN);
 // let stop = false; // for use with while and setTimeout
 
 console.log(moment.locale()); // en
