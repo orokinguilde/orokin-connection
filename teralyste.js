@@ -10,6 +10,7 @@ const moment = require('moment');
 let servers = {};
 let rules = fs.readFileSync('./rules.md');
 console.log(process.env);
+console.log(process.env.TOKEN);
 bot.login(process.env.TOKEN);
 // let stop = false; // for use with while and setTimeout
 
