@@ -1,4 +1,5 @@
-
+try
+{
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const fs = require('fs');
@@ -157,4 +158,9 @@ function writeMessage(_message, discord_message){
                         server.bot_message = m;
                 }))
         }
+}
+}
+catch(ex)
+{
+        console.error(ex);
 }
