@@ -9,8 +9,6 @@ const moment = require('moment');
 // mon test
 let servers = {};
 let rules = fs.readFileSync('./rules.md');
-console.log(process.env);
-console.log(process.env.TOKEN);
 bot.login(process.env.TOKEN);
 // let stop = false; // for use with while and setTimeout
 
@@ -60,7 +58,7 @@ bot.on("guildMemberRemove" , member => {
         })
 })
 bot.on('ready', function () {
-        bot.user.setAvatar('./embleme alliance .png')
+        //bot.user.setAvatar('./embleme alliance .png')
         bot.user.setActivity('connecter la guilde');
 })
 
