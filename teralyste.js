@@ -152,11 +152,11 @@ function writeMessage(_message, discord_message){
                 discord_message.channel.send(embed)
                 .then(m => {
                         server.bot_message = m;
-                });
+                }).catch(console.error);
         } else{
                 server.bot_message.edit(embed).then((m => {
                         server.bot_message = m;
-                }))
+                })).catch(console.error)
         }
 }
 }
