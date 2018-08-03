@@ -5,7 +5,7 @@ const fs = require('fs');
 const request = require("request");
 const EventEmitter = require('events');
 const moment = require('moment');
-
+// mon test
 let servers = {};
 let rules = fs.readFileSync('./rules.md')
 bot.login('process.env.TOKEN');
