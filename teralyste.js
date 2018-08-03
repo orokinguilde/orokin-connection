@@ -58,8 +58,10 @@ bot.on("guildMemberRemove" , member => {
         })
 })
 bot.on('ready', function () {
-        //bot.user.setAvatar('./embleme alliance .png')
-        bot.user.setActivity('connecter la guilde');
+        process.nextTick(() => {
+                bot.user.setAvatar('./embleme alliance .png')
+                bot.user.setActivity('connecter la guilde');
+        });
 })
 
 bot.on('message', function (message) {
